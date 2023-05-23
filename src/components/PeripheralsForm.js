@@ -8,8 +8,6 @@ import {
   Box,
 } from "@mui/material";
 
-// import Multiselect from './Multiselect'
-
 const PeripheralFormDialog = ({
   isOpen,
   peripheral,
@@ -92,19 +90,10 @@ const PeripheralFormDialog = ({
             type="datetime-local"
             value={state.dateCreated}
             onChange={handleChange}
-            // defaultValue="2022-05-24"
             InputLabelProps={{
               shrink: true,
             }}
           />
-
-          {/* <Multiselect peripherals={peripherals} prevSelection={peripheral?.peripherals || []} onSelectUpdate={(newSelection) => {
-              console.log("🚀 ~ file: GatewayFormDialog.js:171 ~ onSelectUpdate ~ state.peripherals", state.peripherals)
-              setState((prevState) => ({
-                ...prevState,
-                peripherals: newSelection.map((s) => s.value),
-              }));
-            }} /> */}
 
           <Box display="flex" justifyContent="space-between">
             <Button onClick={onClose}>Close</Button>

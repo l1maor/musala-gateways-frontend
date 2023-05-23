@@ -184,7 +184,6 @@ const PeripheralsTable = ({ peripherals, fetchData }) => {
                 <TableCell>{row.vendor}</TableCell>
                 <TableCell>{row.status}</TableCell>
                 <TableCell>{row.dateCreated}</TableCell>
-                {/* <TableCell>{row.peripherals?.map((p) => (p.uid)).join(', ')}</TableCell> */}
                 <TableCell>
                 <IconButton onClick={() => handleEditPeripheralClick(row)}>
                     <FontAwesomeIcon icon={faPencilAlt} />
